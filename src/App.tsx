@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Navigation } from './components/Navigation';
-import { HomePage } from './components/HomePage';
-import { ProblemPage } from './components/ProblemPage';
-import { SolutionPage } from './components/SolutionPage';
-import { ProcessPage } from './components/ProcessPage';
-import { FinalPage } from './components/FinalPage';
-import { Dashboard } from './components/Dashboard';
+import { Navigation } from '../src/components/Navigation';
+import { HomePage } from '../src/components/HomePage';
+import { ProblemPage } from '../src/components/ProblemPage';
+import { SolutionPage } from '../src/components/SolutionPage';
+import { ProcessPage } from '../src/components/ProcessPage';
+import { FinalPage } from '../src/components/FinalPage';
+import { Dashboard } from '../src/components/Dashboard';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
