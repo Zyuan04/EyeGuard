@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Navigation } from '../src/components/Navigation';
-import { HomePage } from '../src/components/HomePage';
-import { ProblemPage } from '../src/components/ProblemPage';
-import { SolutionPage } from '../src/components/SolutionPage';
-import { ProcessPage } from '../src/components/ProcessPage';
-import { FinalPage } from '../src/components/FinalPage';
-import { Dashboard } from '../src/components/Dashboard';
+import { Navigation } from './components/Navigation';
+import { HomePage } from './components/HomePage';
+import { ProblemPage } from './components/ProblemPage';
+import { SolutionPage } from './components/SolutionPage';
+import { ProcessPage } from './components/ProcessPage';
+import { FinalPage } from './components/FinalPage';
+import { Dashboard } from './components/Dashboard';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -40,7 +40,7 @@ export default function App() {
       
       {currentPage !== 'dashboard' && (
         <footer className="bg-slate-900 text-slate-400 py-12 text-center">
-          <p className="text-sm">© 2024 EyeGuard Project. CSC3024 Milestone 4.</p>
+          <p className="text-sm">© 2024 EyeGuard Project. HCI 4-2 Milestone 4 Project.</p>
         </footer>
       )}
     </div>

@@ -19,7 +19,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             <div className="space-y-8 animate-fade-in-up">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 backdrop-blur-sm border border-slate-200 rounded-full shadow-sm">
                 <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
-                <span className="text-sm font-medium text-slate-600">CSC3024 Milestone 4 Project</span>
+                <span className="text-sm font-medium text-slate-600">HCI 4-2 Milestone 4 Project</span>
               </div>
               
               <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
@@ -59,7 +59,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1694919123854-24b74b376da1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYW1pbmclMjBzZXR1cCUyMGRlc2t8ZW58MXx8fHwxNzY1MzA5NDc1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="Gaming Setup"
-                  className="w-full h-[500px] object-cover group-hover/image:scale-105 transition-transform duration-700"
+                  className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover group-hover/image:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
@@ -125,7 +125,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   See The Research <ChevronRight size={20} />
                 </button>
               </div>
-              <div className="relative h-[400px] md:h-full min-h-[400px]">
+              <div className="relative h-[300px] sm:h-[400px] md:h-full md:min-h-[400px]">
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1731816803705-54ab8fbd6a8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwY29tcHV0ZXIlMjBzdHVkeWluZ3xlbnwxfHx8fDE3NjUzMzkzMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="Student at Computer"
