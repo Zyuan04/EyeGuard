@@ -1,5 +1,5 @@
 import React from 'react';
-import { MonitorPlay, Bell, BarChart3, Layers, Play, Download, FileText } from "lucide-react";
+import { MonitorPlay, Bell, BarChart3, Layers, Play, ExternalLink, FileText } from "lucide-react";
 import { ImageWithFallback } from "./ImageWithFallback";
 
 interface FinalPageProps {
@@ -128,7 +128,7 @@ export function FinalPage({ onLaunch }: FinalPageProps) {
              </div>
           </div>
 
-          {/* 4. Project Poster */}
+          {/* 4. Project Poster (Updated to open in new tab) */}
           <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-lg flex flex-col sm:flex-row items-center justify-between group hover:border-blue-300 transition-colors h-full min-h-[160px] gap-6 sm:gap-0">
              <div className="flex items-center gap-5 w-full sm:w-auto">
                  <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center group-hover:bg-blue-100 transition-colors shrink-0">
@@ -140,9 +140,14 @@ export function FinalPage({ onLaunch }: FinalPageProps) {
                  </div>
              </div>
              
-             <button className="w-full sm:w-auto px-6 py-3 bg-slate-900 text-white rounded-xl font-medium hover:bg-slate-800 transition-colors flex items-center justify-center gap-2 text-sm shadow-md hover:shadow-lg">
-                 <Download size={16} /> Download
-             </button>
+             <a 
+               href="poster.pdf" 
+               target="_blank"
+               rel="noopener noreferrer"
+               className="w-full sm:w-auto px-6 py-3 bg-slate-900 text-white rounded-xl font-medium hover:bg-slate-800 transition-colors flex items-center justify-center gap-2 text-sm shadow-md hover:shadow-lg"
+             >
+                 <ExternalLink size={16} /> View Poster
+             </a>
           </div>
 
         </div>
